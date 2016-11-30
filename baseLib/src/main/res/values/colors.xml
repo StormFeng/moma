@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <!-- 二维码 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="two_code_title">#2f2f2f</color>
+    <color name="dp_green">#ffffffff</color>
+    <!-- 下拉刷新 -->
+    <color name="dp_divider_line">#15000000</color>
+    <color name="dp_c_item_selected">#ffe2e2e2</color>
+    <color name="dp_c_item_unselected">#ffFBFBFB</color>
+    <color name="dp_white">#ffffffff</color>
+    <color name="dp_black">#ff000000</color>
+    <color name="dp_black_light_1">#ff333333</color>
+    <color name="dp_black_light_2">#ff4a4a4a</color>
+    <color name="dp_gray">#ff9B9B9B</color>
+    <color name="dp_red">#ffEB6563</color>
+    <color name="dp_blue">#ff037AFF</color>
+
+    <!-- 颜色 -->
+    <color name="window_bg">#F5F5F5</color>
+    <color name="green">#57BA23</color>
+    <color name="red">#F1403D</color>
+    <color name="blue">#4A90E2</color>
+    <color name="black">#4a4a4a</color>
+    <!-- 灰色 -->
+    <color name="grey">#cccccc</color>
+    <!-- 签到页背景 -->
+    <color name="qd_bg">#FF00A0E9</color>
+
+    <!-- 主体文字颜色 -->
+    <color name="text_bg20">#FF202020</color>
+    <color name="text_bg60">#FF606060</color>
+    <color name="text_bg90">#FF909090</color>
+    <color name="text_bgb0">#FFb0b0b0</color>
+    <color name="text_red">#FFE26461</color>
+</resources>

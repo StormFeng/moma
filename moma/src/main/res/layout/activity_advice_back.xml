@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical" >
+
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:hint="请描述您遇到的问题或您的宝贵建议"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="210dp"
+                android:layout_height="41.3dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="167dp"
+                android:background="@drawable/orange_radius_button_bg"
+                android:text="提交" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

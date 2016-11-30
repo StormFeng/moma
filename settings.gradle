@@ -1,0 +1,8 @@
+include ':configlib', ':mapLib', ':bDIntegrationSDK_LibProject', ':baidu_Push_SDK_library_project'
+include ':midianAfinal'
+include ':baseLib'
+include ':login'
+include ':social_sdk_library_project'
+include ':moma'
+include ':PhotoPicker'
+include ':alipay_lib'

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">摩范Mofun</string>
+    <string name="exit_text">再按一次退出应用</string>
+    <string name="add_order_fail">添加订单失败</string>
+    <string name="custom">自定义</string>
+    <string name="currdate_sold">当前时间段已出售</string>
+    <string name="shoppingcart_exist">购物车已经存在</string>
+    <string name="client_key_error">client_key错误</string>
+    <string name="invalid_param">参数不全</string>
+    <string name="account_not_exist">此账号不存在</string>
+    <string name="passwd_error">密码错误</string>
+    <string name="account_exist">您注册的帐号已存在</string>
+    <string name="account_disable">您的账号已被禁用，请联系管理员</string>
+    <string name="verification_code_error">验证码错误</string>
+    <string name="verification_code_expire">验证码失效</string>
+    <string name="fail">失败</string>
+    <string name="save_error">保存错误</string>
+    <string name="update_error">更新错误</string>
+    <string name="delete_error">删除错误</string>
+    <string name="pic_out_of_range">广告资料图超过10张</string>
+
+    <string name="reg_error">注册失败</string>
+    <string name="codeerror">验证码输入有误</string>
+    <string name="login_error">账号或密码有误</string>
+    <string name="password_error">密码错误</string>
+    <string name="send_error">发送失败</string>
+    <string name="validate_error">验证失败</string>
+    <string name="code_error">验证码无效</string>
+    <string name="add_error">验证失败</string>
+</resources>

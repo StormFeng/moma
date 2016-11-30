@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item name="type1">平面类型</item>
+        <item name="type2">视频类型</item>
+    </string-array>
+    <string-array name="time">
+        <item name="time1">一个星期</item>
+        <item name="time2">一个月</item>
+        <item name="time3">三个月</item>
+        <item name="time4">半年</item>
+        <item name="time5">一年</item>
+    </string-array>
+</resources>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FF00A0E9"
+              android:orientation="vertical">
+
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8.6dp"
+                android:paddingTop="12.5dp">
+
+                <midian.baselib.widget.CircleImageView
+                    android:id="@+id/head_cv"
+                    android:layout_width="36.5dp"
+                    android:layout_height="36.5dp"
+                    android:background="@drawable/head1"/>
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.4dp"
+                    android:text="用户"
+                    android:textColor="@color/white"
+                    android:textSize="15.4sp"/>
+                <TextView
+                    android:id="@+id/count_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="0 积分"
+                    android:textColor="#FFE8ECF0"
+                    android:textSize="14.4sp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="275.5dp"
+                android:layout_marginLeft="4.8dp"
+                android:layout_marginRight="4.8dp"
+                android:background="@drawable/sing_in_bg"
+                android:paddingBottom="14.4dp"
+                android:paddingLeft="9.6dp"
+                android:paddingRight="10.6dp"
+                android:paddingTop="10.6dp">
+
+                <LinearLayout
+                    android:id="@+id/calendar_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_sign_in"/>
+
+                    <TextView
+                        android:id="@+id/current_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11.7dp"
+                        android:text="2016-01-01"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="13.4sp"/>
+                </LinearLayout>
+
+                <com.midian.moma.ui.home.SignCalendar
+                    android:id="@+id/calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="221.8dp"
+                    android:layout_below="@+id/calendar_ll"
+                    android:layout_marginTop="6.7dp"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5.8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/continuity_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="已签到0天"
+                    android:textColor="#FFE8ECF0"
+                    android:textSize="14.4sp"/>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/sign_btn"
+                android:layout_width="196.8dp"
+                android:layout_height="41.3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.4dp"
+                android:background="@drawable/bg_sign_btn"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/icon_group_bg">
+
+                <LinearLayout
+                    android:id="@+id/share_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="73.9dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/background_view_rounded_middle"
+                    android:paddingLeft="14.4dp"
+                    android:paddingRight="26.9dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_sign_share"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12.4dp"
+                        android:layout_weight="1"
+                        android:text="邀请好友玩摩范"
+                        android:textColor="#FFBDF9FF"
+                        android:textSize="14.4sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_sign_right_arraw"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/share_ll"
+                    android:layout_marginTop="14.4dp"
+                    android:background="@drawable/dotted_line"
+                    android:layerType="software"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/share_ll"
+                    android:layout_marginTop="23.8dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="18.2dp"
+                    android:paddingLeft="14.4dp"
+                    android:paddingRight="15.4dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_sign_timebg"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12.4dp"
+                        android:layout_weight="1"
+                        android:text="每天提醒我来签到"
+                        android:textColor="#FFBDF9FF"
+                        android:textSize="14.4sp"/>
+
+                    <midian.baselib.tooglebutton.ToggleButton
+                        android:id="@+id/toggle_button"
+                        android:layout_width="57.6dp"
+                        android:layout_height="29.8dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

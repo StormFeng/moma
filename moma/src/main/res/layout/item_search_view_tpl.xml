@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_line" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_blue"
+            android:gravity="center"
+            android:text="视频类广告"
+            android:textColor="#FF00A0E9"
+            android:textSize="14.4sp" />
+
+        <TextView
+            android:id="@+id/item_name2"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_blue"
+            android:gravity="center"
+            android:text="视频类广告"
+            android:textColor="#FF00A0E9"
+            android:textSize="14.4sp" />
+
+        <TextView
+            android:id="@+id/item_name3"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round_blue"
+            android:gravity="center"
+            android:text="视频类广告"
+            android:textColor="#FF00A0E9"
+            android:textSize="14.4sp" />
+    </LinearLayout>
+
+</LinearLayout>

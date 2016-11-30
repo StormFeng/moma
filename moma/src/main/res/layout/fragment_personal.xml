@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/personal_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15.4dp">
+
+                <!-- <midian.baselib.widget.CircleImageView /> -->
+
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="61.4dp"
+                    android:layout_height="61.4dp"
+                    android:background="@drawable/head1"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15.4dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="未登陆"
+                        android:textColor="@color/text_bg20"
+                        android:textSize="17.3sp"/>
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="13.7dp"
+                        android:drawableLeft="@drawable/icon_phone"
+                        android:text="138****8000"
+                        android:textColor="@color/text_bg20"
+                        android:textSize="13.4sp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="7.7dp"
+                    android:layout_height="13.4dp"
+                    android:background="@drawable/icon_right_arrow"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/c_divider_line"/>
+
+            <LinearLayout
+                android:id="@+id/my_order_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/allOrder_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/default_button"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_my_order"
+                        android:drawablePadding="16.3dp"
+                        android:gravity="center_vertical"
+                        android:text="我的订单"
+                        android:textColor="@color/text_bg20"
+                        android:textSize="15.4sp"/>
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/icon_right_arrow"
+                        android:text="查看全部订单"
+                        android:textColor="@color/text_bg90"
+                        android:textSize="13.4sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/c_divider_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/payMoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/default_button"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_pending_pgy"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="待付款"
+                            android:textColor="@color/text_bg60"
+                            android:textSize="11.5sp"/>
+
+                        <TextView
+                            android:id="@+id/pay_count_tv"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/frame_bg"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/orange_button"
+                            android:textSize="11.5dp"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/commit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/default_button"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_pending_commit"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="待提交"
+                            android:textColor="@color/text_bg60"
+                            android:textSize="11.5sp"/>
+
+                        <TextView
+                            android:id="@+id/commit_count_tv"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/frame_bg"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/orange_button"
+                            android:textSize="11.5dp"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/audit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/default_button"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_pending_audit"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="待审核"
+                            android:textColor="@color/text_bg60"
+                            android:textSize="11.5sp"/>
+
+                        <TextView
+                            android:id="@+id/audit_count_tv"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/frame_bg"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/orange_button"
+                            android:textSize="11.5dp"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/finish"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/default_button"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_finish"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="已完成"
+                            android:textColor="@color/text_bg60"
+                            android:textSize="11.5sp"/>
+
+                        <TextView
+                            android:id="@+id/finish_count_tv"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/frame_bg"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/orange_button"
+                            android:textSize="11.5dp"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/c_divider_line"/>
+
+            <LinearLayout
+                android:id="@+id/book_order_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/booking_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/default_button"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_pending"
+                        android:drawablePadding="16.3dp"
+                        android:text="我的预订"
+                        android:textColor="@color/text_bg20"
+                        android:textSize="15.4sp"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/icon_right_arrow"
+                        android:text="查看预订订单"
+                        android:textColor="@color/text_bg90"
+                        android:textSize="13.4sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/c_divider_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/book_audit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/default_button"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_pending_pgy"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="待审核"
+                            android:textColor="@color/text_bg60"
+                            android:textSize="11.5sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/book_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/default_button"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_pending_commit"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="已通过"
+                            android:textColor="@color/text_bg60"
+                            android:textSize="11.5sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/book_reject"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/default_button"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/icon_pending_audit"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="已拒绝"
+                            android:textColor="@color/text_bg60"
+                            android:textSize="11.5sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/c_divider_line"/>
+
+                <LinearLayout
+                    android:id="@+id/concern_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/default_button"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_concern"
+                        android:drawablePadding="16.3dp"
+                        android:text="我的关注"
+                        android:textColor="@color/text_bg20"
+                        android:textSize="15.4sp"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_right_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/c_divider_line"/>
+
+            <LinearLayout
+                android:id="@+id/process_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_process"
+                    android:drawablePadding="16.3dp"
+                    android:text="合作流程"
+                    android:textColor="@color/text_bg20"
+                    android:textSize="15.4sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_right_arrow"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/c_divider_line"/>
+
+            <LinearLayout
+                android:id="@+id/message_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_message"
+                    android:drawablePadding="16.3dp"
+                    android:text="通知消息"
+                    android:textColor="@color/text_bg20"
+                    android:textSize="15.4sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_right_arrow"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/c_divider_line"/>
+
+            <LinearLayout
+                android:id="@+id/setting_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_button"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_setting"
+                    android:drawablePadding="16.3dp"
+                    android:text="设置"
+                    android:textColor="@color/text_bg20"
+                    android:textSize="15.4sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_right_arrow"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

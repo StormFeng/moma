@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.midian.moma"
+        minSdkVersion 15
+        targetSdkVersion 21
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("$rootDir/midian.jks")
+            storePassword 'midian'
+            keyAlias 'midian_keystore'
+            keyPassword 'midian'
+        }
+        release {
+            storeFile file("$rootDir/midian.jks")
+            storePassword 'midian'
+            keyAlias 'midian_keystore'
+            keyPassword 'midian'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':baseLib')
+    compile project(':configlib')
+    compile project(':login')
+    compile project(':midianAfinal')
+    compile project(':social_sdk_library_project')
+    compile project(':PhotoPicker')
+    compile 'com.android.support:support-v4:21.0.3'
+    compile project(':alipay_lib')
+    compile project(':mapLib')
+    compile project(':bDIntegrationSDK_LibProject')
+    compile project(':baidu_Push_SDK_library_project')
+}

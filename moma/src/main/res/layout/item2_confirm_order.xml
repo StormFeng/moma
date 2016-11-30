@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="7.7dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/invoice_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/default_button"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14.4dp"
+        android:paddingRight="16.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发票信息"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <midian.baselib.tooglebutton.ToggleButton
+            android:id="@+id/toggle_button"
+            android:layout_width="49dp"
+            android:layout_height="29.8dp"
+            android:background="#FF4CD864"/>
+    </LinearLayout>
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14.4dp"
+        android:layout_marginRight="16.3dp"
+        android:background="@drawable/c_divider_line"/>-->
+
+    <LinearLayout
+        android:id="@+id/type_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/default_button"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14.4dp"
+        android:paddingRight="16.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发票抬头类型"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="请选择发票抬头类型"
+            android:textColor="@color/text_bg90"
+            android:textSize="13.4sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_right_arrow"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+   <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14.4dp"
+        android:layout_marginRight="16.3dp"
+        android:background="@drawable/c_divider_line"/>-->
+
+    <LinearLayout
+        android:id="@+id/upHead_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/default_button"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14.4dp"
+        android:paddingRight="16.3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发票抬头"
+            android:textColor="@color/text_bg20"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:id="@+id/upHead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:text="请输入发票抬头"
+            android:textColor="@color/text_bg90"
+            android:textSize="13.4sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_right_arrow"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingLeft="11.5dp"
+            android:paddingRight="16.3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="商品金额"
+                android:textColor="@color/text_bg20"
+                android:textSize="14.4sp"/>
+
+            <TextView
+                android:id="@+id/totalMoney"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/orange_button"
+                android:textSize="14.4sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/c_divider_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingLeft="11.5dp"
+            android:paddingRight="16.3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="优惠"
+                android:textColor="@color/text_bg20"
+                android:textSize="14.4sp"/>
+
+            <TextView
+                android:id="@+id/welf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/text_bg20"
+                android:textSize="14.4sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line"/>
+
+    <LinearLayout
+        android:id="@+id/pay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7.7dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <CheckBox
+            android:id="@+id/alpay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selected_alpay_bg"
+            android:gravity="center_horizontal"
+            android:text="支付宝支付"
+            android:textColor="@color/text_bg90"
+            android:textSize="13.4sp"/>
+
+        <CheckBox
+            android:id="@+id/wechat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/selected_wechat_bg"
+            android:gravity="center_horizontal"
+            android:text="微信支付"
+            android:textColor="@color/text_bg90"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/selected_chekbox_bg"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="《摩玛传媒广告位购买须知》"
+            android:textColor="@color/text_bg90"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+</LinearLayout>

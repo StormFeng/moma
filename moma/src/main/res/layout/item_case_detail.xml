@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="234.8dp"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="56dp"
+        android:paddingTop="56dp"
+        android:paddingLeft="15.4dp"
+        android:paddingRight="26.9dp">
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#FF030303"
+            android:textSize="28.8dp"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.3dp"
+            android:text="广州南站广告灯箱牌三块招租，武广线、深广线、广珠线、京广线等 主出站通道及检票口;广州南站广告灯箱牌三块招租，武广线、深广线、广珠线、京广线等"
+            android:textColor="#FF030303"
+            android:textSize="13.4dp"/>
+    </LinearLayout>
+
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_home_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15.4dp"
+        android:paddingTop="57.6dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#FF030303"
+            android:textSize="28.8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.3dp"
+            android:paddingBottom="56dp"
+            android:text="武广线、深广线、广珠线、京广线等 主出站通道及检票口;武广线、深广线、广珠线、京广线等 主出站通道及检票口;武广线、深广线、广珠线、京广线等 主出站通道及检票口;武广线、深广线、广珠线、京广线等 主出站通道及检票口;"
+            android:textColor="#FF030303"
+            android:textSize="13.4dp" />
+    </LinearLayout>-->
+</LinearLayout>

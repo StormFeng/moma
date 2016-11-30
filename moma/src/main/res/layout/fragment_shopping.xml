@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <midian.baselib.widget.pulltorefresh.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- 关注、加入购物车、购买 -->
+
+        <LinearLayout
+            android:id="@+id/shopping_ll"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/allCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selected_chekbox_bg"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="11.5dp"
+                    android:text="全选"
+                    android:textColor="#FF030303"
+                    android:textSize="15.4sp"/>
+
+                <LinearLayout
+                    android:id="@+id/count_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/default_button"
+                            android:gravity="center_vertical"
+                            android:text="合计："
+                            android:textColor="@color/text_bg60"
+                            android:textSize="13.4sp"/>
+                        <!-- android:text="¥0.0"-->
+                        <TextView
+                            android:id="@+id/count_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/orange_button"
+                            android:text="¥ 0"
+                            android:textSize="15.4sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/default_button"
+                            android:gravity="center_vertical"
+                            android:text="总额："
+                            android:textColor="@color/text_bg60"
+                            android:textSize="13.4sp"/>
+
+                        <TextView
+                            android:id="@+id/totalMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_bg90"
+                            android:text="¥ 0"
+                            android:textSize="11.4sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:background="@drawable/default_button"
+                            android:gravity="center_vertical"
+                            android:text="立减："
+                            android:textColor="@color/text_bg60"
+                            android:textSize="13.4sp"/>
+
+                        <TextView
+                            android:id="@+id/welf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="¥ 0"
+                            android:textColor="@color/text_bg90"
+                            android:textSize="11.4sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#FFF49A00"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:text="结算"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15.4sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

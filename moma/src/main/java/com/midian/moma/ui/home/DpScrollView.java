@@ -1,0 +1,38 @@
+package com.midian.moma.ui.home;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.widget.ScrollView;
+
+/**
+ * 可禁用滚动的ScrollView
+ * Created by XuYang on 15/4/22.
+ */
+public class DpScrollView extends ScrollView {
+
+	private boolean isScrollable = true;
+
+	public DpScrollView(Context context) {
+		super(context);
+	}
+
+	public DpScrollView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+	}
+
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		return this.isScrollable && super.onTouchEvent(event);
+	}
+
+	@Override
+	public boolean onInterceptTouchEvent(MotionEvent event) {
+		return this.isScrollable && super.onInterceptTouchEvent(event);
+	}
+
+	public void setScrollable(boolean isScrollable) {
+		this.isScrollable = isScrollable;
+	}
+
+}

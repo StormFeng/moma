@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="select_filter_btns">
+        <item name="btn1">类型</item>
+        <item name="btn2">广告圈</item>
+        <item name="btn3">时间</item>
+    </array>
+
+</resources>

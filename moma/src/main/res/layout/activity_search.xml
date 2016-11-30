@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.midian.moma.customview.DimedView
+        android:id="@+id/dime_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <midian.baselib.widget.FlowLayouts
+        android:id="@+id/flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </midian.baselib.widget.FlowLayouts>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28.8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="19.2dp"
+        android:paddingRight="26dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="历史搜索"
+            android:textColor="#FFB0B0B0"
+            android:textSize="13.4sp"/>
+
+        <TextView
+            android:id="@+id/clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空记录..."
+            android:textColor="#FFF49A00"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+    <midian.baselib.widget.MyListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </midian.baselib.widget.MyListView>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <midian.baselib.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <midian.baselib.widget.ScrollViewWidthListener
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/window_bg"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="39dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14.5dp"
+                android:paddingLeft="16.3dp"
+                android:paddingRight="79.7dp"
+                android:paddingTop="17.3dp"
+                android:text="上传支持jpg、png格式图片，最多上传10张"
+                android:textColor="#FFB0B0B0"
+                android:textSize="13.4sp"/>
+
+            <LinearLayout
+                android:id="@+id/upload_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="18.3dp"
+                android:paddingTop="27.8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_upload"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14.4dp"
+                    android:text="点击上传广告图"
+                    android:textColor="#FFB0B0B0"
+                    android:textSize="13.4sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20.7dp"
+                android:padding="22dp"
+                android:visibility="gone"/>
+
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15.43dp"
+                android:background="@android:color/white"
+                android:gravity="left|top"
+                android:hint="请输入您的广告要求"
+                android:padding="15.4dp"
+                android:textColor="#FFB0B0B0"
+                android:textSize="15.4sp"/>
+
+            <TextView
+                android:id="@+id/replay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/default_button"
+                android:drawableRight="@drawable/icon_right_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="16.3dp"
+                android:paddingRight="16.3dp"
+                android:text="查看回复列表"
+                android:visibility="gone"/>
+
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="46.1dp"
+                android:background="@drawable/orange_radius_button_bg"
+                android:paddingLeft="61dp"
+                android:paddingRight="61dp"
+                android:text="上传广告资料"
+                android:textColor="#FFFFFFFF"
+                android:textSize="17.3sp"/>
+        </LinearLayout>
+    </midian.baselib.widget.ScrollViewWidthListener>
+</LinearLayout>

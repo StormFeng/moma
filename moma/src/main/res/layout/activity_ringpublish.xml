@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <midian.baselib.widget.BaseLibTopbarView
+       android:id="@+id/topbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="130dip"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="与圈友说点什么吧...."
+                android:padding="10dip"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSP13"
+                android:windowSoftInputMode="stateVisible|adjustResize" />
+
+            <com.cn.zhuoju.baseview.customview.FlowLayout
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="center" />
+
+            <CheckBox
+                android:id="@+id/cb_is_anonymity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:button="@null"
+                android:padding="10dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="匿名也是一种态度，你也来试试"
+                android:textSize="@dimen/textSP10" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

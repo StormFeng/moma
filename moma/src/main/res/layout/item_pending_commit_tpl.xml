@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7.7dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="11.5dp"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="11.5dp"
+        android:paddingTop="21.1dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="102dp"
+                android:layout_height="61dp"
+                android:background="@drawable/icon_bg"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.7dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="广州市天河区珠江新城地铁站A/B/C/D/E出站口沿线墙体右侧广告位"
+                    android:textColor="#FF030303"
+                    android:textSize="13.4sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.8dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="实付金额："
+                        android:textColor="@color/text_bg90"
+                        android:textSize="15.4sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥"
+                        android:textColor="#FFF49A00"
+                        android:textSize="15.4sp" />
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="360000"
+                        android:textColor="#FFF49A00"
+                        android:textSize="15.4sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.7dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="11.5dp">
+
+            <TextView
+                android:id="@+id/type_loc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:text="类型:A梯；位置：左；"
+                android:textColor="@color/text_bg60"
+                android:textSize="12.5sp"
+                android:ellipsize="end"/>
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:text="2015.08.01 - 2015.09.01"
+                android:textColor="@color/text_bg60"
+                android:textSize="12.5sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="17.3dp"
+        android:paddingRight="11.5dp" >
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待提交"
+            android:textColor="#FFF49A00"
+            android:textSize="13.4sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_radius_button_bg"
+            android:paddingBottom="7.7dp"
+            android:paddingLeft="10.5dp"
+            android:paddingRight="10.5dp"
+            android:paddingTop="8.6dp"
+            android:text="上传资料"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

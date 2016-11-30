@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PhotoPicker/PhotoPicker.iml" filepath="$PROJECT_DIR$/PhotoPicker/PhotoPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alipay_lib/alipay_lib.iml" filepath="$PROJECT_DIR$/alipay_lib/alipay_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bDIntegrationSDK_LibProject/bDIntegrationSDK_LibProject.iml" filepath="$PROJECT_DIR$/bDIntegrationSDK_LibProject/bDIntegrationSDK_LibProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baidu_Push_SDK_library_project/baidu_Push_SDK_library_project.iml" filepath="$PROJECT_DIR$/baidu_Push_SDK_library_project/baidu_Push_SDK_library_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseLib/baseLib.iml" filepath="$PROJECT_DIR$/baseLib/baseLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configlib/configlib.iml" filepath="$PROJECT_DIR$/configlib/configlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/login/login.iml" filepath="$PROJECT_DIR$/login/login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mapLib/mapLib.iml" filepath="$PROJECT_DIR$/mapLib/mapLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/midianAfinal/midianAfinal.iml" filepath="$PROJECT_DIR$/midianAfinal/midianAfinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moma.iml" filepath="$PROJECT_DIR$/moma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moma/moma-moma.iml" filepath="$PROJECT_DIR$/moma/moma-moma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" filepath="$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" />
+    </modules>
+  </component>
+</project>

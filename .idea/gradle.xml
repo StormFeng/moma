@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/PhotoPicker" />
+            <option value="$PROJECT_DIR$/alipay_lib" />
+            <option value="$PROJECT_DIR$/bDIntegrationSDK_LibProject" />
+            <option value="$PROJECT_DIR$/baidu_Push_SDK_library_project" />
+            <option value="$PROJECT_DIR$/baseLib" />
+            <option value="$PROJECT_DIR$/configlib" />
+            <option value="$PROJECT_DIR$/login" />
+            <option value="$PROJECT_DIR$/mapLib" />
+            <option value="$PROJECT_DIR$/midianAfinal" />
+            <option value="$PROJECT_DIR$/moma" />
+            <option value="$PROJECT_DIR$/social_sdk_library_project" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
