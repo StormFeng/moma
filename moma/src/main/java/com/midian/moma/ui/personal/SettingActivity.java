@@ -3,19 +3,16 @@ package com.midian.moma.ui.personal;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.midian.login.view.ModifyPwdOneActivity;
 import com.midian.login.view.LoginActivity;
 import com.midian.moma.R;
 import com.midian.moma.utils.ShareDialogUtil;
 import com.qihoo.appstore.common.updatesdk.lib.UpdateHelper;
-
 import midian.baselib.base.BaseActivity;
 import midian.baselib.utils.UIHelper;
 import midian.baselib.version.VersionUpdateUtil;
@@ -59,7 +56,7 @@ public class SettingActivity extends BaseActivity implements ShareDialogUtil.Sha
         share_ll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String share_url = "http://www.baidu.com";
+                String share_url = "http://mobile.baidu.com/item?docid=10082549&from=1010680m";
                 String share_title = "摩范APP";
                 String share_content = "万千优惠在手中，精彩生活我做主！";
                 String share_img = null;

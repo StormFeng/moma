@@ -39,7 +39,7 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':baseLib')
+//    compile project(':baseLib')
     compile project(':configlib')
     compile project(':login')
     compile project(':midianAfinal')
